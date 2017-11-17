@@ -7,12 +7,17 @@
 *	Deck : class
 *----------------------------
 *	-numberOfCards : int
+*	-numberOfDecks : int(1)
+*	-listOfCards : List<Card>
 *----------------------------
 *	<<constructor>> Deck()
 *	<<constructor>> Deck(int numOfDecks)
-*	-newDeck()
-*	-shuffle()
+*	+newDeck() : boolean
+*	-shuffle() : boolean
 *	+removeCard() : Card
+*	+cardCount() : int
+*
+*
 *	+listOfCards : List<Card>
 */
 
@@ -20,21 +25,20 @@ import java.util.*;
 
 class Deck{
 	private int numberOfCards = 0;
+	private int numberOfDecks = 1;
 	List<Card> listOfCards = null;
-	Deck(){
+	public Deck(){
 		numberOfCards = 52;
-		listOfCards = new ArrayList<>();
-		for(Suit suit : Suit.values()){
-			for(Number num : Number.values()){
-				Card newCard = new Card(suit, num);
-				listOfCards.add(newCard);
-			}
-		}
+		newDeck();
 	}
-	Deck(int numOfDecks){
-		numberOfCards = 52 * numOfDecks;
+	public Deck(int numberOfDecks){
+		numberOfCards = 52 * numberOfDecks;
+		this.numberOfDecks = numberOfDecks;
+		newDeck();
+	}
+	public boolean newDeck(){
 		listOfCards = new ArrayList<>();
-		for(int i = 0; i < numOfDecks; i++){
+		for(int i = 0; i < numberOfDecks; i++){
 			for(Suit suit : Suit.values()){
 				for(Number num : Number.values()){
 					Card newCard = new Card(suit, num);
@@ -42,8 +46,21 @@ class Deck{
 				}
 			}
 		}
+		return true;
+	}
+	public boolean shuffle(){
+		if(listOfCards == null){
+			return false;
+		}
+		Collections.shuffle(listOfCards);
+		return true;
 	}
 	public int cardCount(){
 		return numberOfCards;
+	}
+	public Card removeCard(){
+		Card ret = listOfCards.remove(0);
+		numberOfCards--;
+		return ret;
 	}
 }
