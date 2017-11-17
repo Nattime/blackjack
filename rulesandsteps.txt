@@ -1,0 +1,23 @@
+Game: Blackjack
+
+Steps:
+1) create a deck of cards
+2) shuffle cards
+3) burn one card, show it to players
+4) distribute 2 cards to each player by removing one card from deck at a time
+	to each player in game going in a circle
+5) dealer has second card hidden from players
+6) if dealer has a 10 or equivalent or an Ace, ask players if they want to buy
+	insurance, if not continue to step 7
+	6a) after buying insurance round is over, if hidden card makes a total of 21
+		end round an distribute winnings
+7) start with current first player and have player play their actions and when
+	their turn is over, continue down the lines of players until everyone has
+	gone
+	7a) if player has blackjack, they automatically win, distribute winnings
+8) dealer now plays till hand is equal to 17 or higher, if dealer goes over 21,
+	the remaining playing players currently in the round automatically wins,
+	distribute winnings
+9) remove cards from field and check if deck has more than 10% cards left
+	9a) if deck has more than 10% cards left, continue to step 4
+	9b) if deck has less than or equal to 10% cards left, start at step 1
