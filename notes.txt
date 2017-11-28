@@ -1,0 +1,10 @@
+11/27/2017
+------------------------------
+-include limits for the table, minimum and maximum bets
+-check for natural blackjack
+
+
+
+Date
+------------------------------
+-Note
