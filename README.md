@@ -23,3 +23,4 @@ Final
 	-added working blackjack game
 	-created new text file for notes
 	-fixed problem with hand: 8, 2, ACE; gave total of 11 instead of 21
+	-added a file to easily upload to git
