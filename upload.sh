@@ -2,7 +2,7 @@
 # created 11/27/2017
 # upload files to git
 
-TEXT="Adding upload file for easier uploading to git"
+TEXT="Fixed wordings"
 
 clear
 # echo $TEXT

@@ -9,7 +9,9 @@ public class TestCards{
 	public static void main(String[] args) {
 		// testing Blackjack class
 		Blackjack bj = new Blackjack();
-		bj.addPlayer(new Player(1, 1000));
+		// bj.addPlayer(new Player(1, 1000));
+		// bj.addPlayer(new Player(2, 2000));
+		// bj.addPlayer(new Player(3, 3000));
 		bj.playGame();
 
 
@@ -149,5 +151,7 @@ public class TestCards{
 		// player.addCard(new Card(Suit.DIAMOND, Number.TWO));
 		// player.addCard(new Card(Suit.DIAMOND, Number.ACE));
 		// System.out.println("playerTotalSumOfCards: " + player.getTotalSumOfCards());
+
+
 	}
 }
