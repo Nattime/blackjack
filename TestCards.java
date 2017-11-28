@@ -7,6 +7,13 @@ import java.util.*;
 
 public class TestCards{
 	public static void main(String[] args) {
+		// testing Blackjack class
+		// Blackjack bj = new Blackjack();
+		// bj.addPlayer(new Player(1, 1000));
+		// bj.playGame();
+
+
+
 		// Deck deck = new Deck();
 		// Deck deck = new Deck(2);
 		// deck.printDeck();
@@ -17,10 +24,7 @@ public class TestCards{
 		// System.out.println(deck.removeCard());
 		// System.out.println("card count: " + deck.cardCount());
 
-        // testing Blackjack class
-		Blackjack bj = new Blackjack();
-		bj.addPlayer(new Player(1, 1000));
-		bj.playGame();
+
 
         // testing Player class
 		// Player player1 = new Player(1, 100);
@@ -138,5 +142,12 @@ public class TestCards{
 		// player1.addCard(card1);
 		// System.out.println("\tplayerTotalSumOfCards: " + player1.getTotalSumOfCards());
 		// System.out.println();
+
+        // checking hand: 8, 2, ACE; giving sum of 11 instead of 21
+		// Player player = new Player(1, 1000);
+		// player.addCard(new Card(Suit.DIAMOND, Number.EIGHT));
+		// player.addCard(new Card(Suit.DIAMOND, Number.TWO));
+		// player.addCard(new Card(Suit.DIAMOND, Number.ACE));
+		// System.out.println("playerTotalSumOfCards: " + player.getTotalSumOfCards());
 	}
 }

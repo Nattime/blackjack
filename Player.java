@@ -77,10 +77,10 @@ public class Player{
 			boolean hasAceUsedAsEleven = false;
 			for(int i = 0; i < cardList.size(); i++){
 				int number = cardList.get(i).getNumber();
-				// System.out.println("number: " + number);
+				System.out.println("number: " + number);
 				// System.out.println("\thasAceUsedAsEleven: " + hasAceUsedAsEleven);
 				if(number == 11){
-					if((sum + number) <= 11){
+					if((sum + number) <= 21){
 						sum += number;
 						hasAceUsedAsEleven = true;
 					}else{ // sum greater than 10

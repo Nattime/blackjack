@@ -2,6 +2,8 @@
 ------------------------------
 -include limits for the table, minimum and maximum bets
 -check for natural blackjack
+-(fixed)problem with hand: 8, 2, ACE; gives 11 instead of 21
+
 
 
 

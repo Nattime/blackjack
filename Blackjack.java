@@ -126,6 +126,13 @@ public class Blackjack{
 			System.out.println();
 			printGameOptions();
 			optionNumber = sc.nextInt();
+			while(optionNumber == 3){
+				if(optionNumber == 3){
+					System.out.println("\t\t\tnumOfCardsLeft: " + deck.cardCount());
+				}
+				printGameOptions();
+				optionNumber = sc.nextInt();
+			}
 		}
 	}
 	public void clearTable(){
@@ -141,6 +148,8 @@ public class Blackjack{
 		System.out.println("Game options:");
 		System.out.println("\t\t1) Continue Playing");
 		System.out.println("\t\t2) Quit");
+		System.out.println("\t\t3) Print number of cards left");
+		// System.out.println("\t\t4) ");
 	}
 	static void printOptions(){
 		System.out.println("Options:");
