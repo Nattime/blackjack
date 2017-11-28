@@ -1,6 +1,8 @@
 <!--  Blackjack project -->
 Started on 11/17/2017
 
+To run code: use run.sh
+To upload to git: use upload.sh
 
 Design
 

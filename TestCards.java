@@ -8,9 +8,9 @@ import java.util.*;
 public class TestCards{
 	public static void main(String[] args) {
 		// testing Blackjack class
-		// Blackjack bj = new Blackjack();
-		// bj.addPlayer(new Player(1, 1000));
-		// bj.playGame();
+		Blackjack bj = new Blackjack();
+		bj.addPlayer(new Player(1, 1000));
+		bj.playGame();
 
 
 
