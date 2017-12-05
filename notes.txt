@@ -5,6 +5,41 @@
 -(fixed)problem with hand: 8, 2, ACE; gives 11 instead of 21
 
 
+12/04/2017
+------------------------------
+-add a way to "split pairs" if player has  two cards of the same value
+	-if another pair is dealt on one of the hands, that hand may be split as well
+-allow players to do side bets
+-created phases for each step, eg.
+	-add players round
+	-players betting phase
+	-deal cards round
+	-check if any player's side bets has won
+	-distribute winnings from side bets
+	-check for natural Blackjack
+		-if dealer has an ace, they may offer players an “insurance” bet; if the
+			dealer has blackjack, the player is paid 2 to 1 on the insurance bet
+	-players hit or pass round
+	-check for winners
+	-distribute winnings round
+-create a round after dealing cards to every player to check if player has natural blackjack
+-allow players to hit even though they have a blackjack hand
+-players "hit" to get a card, players "stay" to finish hand, a tie is a "push"
+-If the player wins with a natural blackjack, they are paid 3 to 2 or one and a
+	half times the original bet
+-after the initial deal, a player may “double down” and double their bet; player
+	may receive only one more card and if they win are paid 2 to 1 on the doubled bet
+-in the event the player has a natural blackjack and the Dealer draws to 21, the
+	Blackjack is the winning hand and will be paid at the odds of 3 to 2. In the
+	event the player draws to 21 with more than 2 cards, the Dealer’s Blackjack
+	is the winning hand.
+-need to include a side-bet amount
+-add how many times a player has won and lost
+-add the amount player has won or lost
+*note: some casinos will allow a player to “surrender”. after the dealer has
+	checked for blackjack the player may give up their hand and get half of their
+	bet back. the option to surrender before the dealer has check for blackjack
+	is know as “early surrender”
 
 
 

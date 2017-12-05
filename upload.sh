@@ -2,7 +2,7 @@
 # created 11/27/2017
 # upload files to git
 
-TEXT="Fixed wordings"
+TEXT="Added blackjack test class, phases, splitting hands, double downing, and extra files"
 
 clear
 # echo $TEXT

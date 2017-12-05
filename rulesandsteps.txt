@@ -1,4 +1,7 @@
 Game: Blackjack
+src: http://www.beating-blackjack.com/blackjack_rules.html
+	https://www.jumerscasinohotel.com/files/Blackjack.pdf
+
 
 Steps:
 1) create a deck of cards

@@ -8,12 +8,15 @@ import java.util.*;
 public class TestCards{
 	public static void main(String[] args) {
 		// testing Blackjack class
-		Blackjack bj = new Blackjack();
+		// TestBlackjack bj = new TestBlackjack();
 		// bj.addPlayer(new Player(1, 1000));
 		// bj.addPlayer(new Player(2, 2000));
 		// bj.addPlayer(new Player(3, 3000));
-		bj.playGame();
+		// bj.playGame();
 
+
+		Blackjack bj = new Blackjack();
+		bj.playGame();
 
 
 		// Deck deck = new Deck();
